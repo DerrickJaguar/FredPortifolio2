@@ -53,88 +53,156 @@ const Home = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section id="home" className="pt-24 md:pt-32 pb-16 md:pb-24 bg-gradient-to-r from-primary to-primary-600 text-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="home" className="pt-28 md:pt-36 pb-20 md:pb-28 bg-gradient-to-br from-primary via-primary-600 to-primary-700 text-white relative overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 z-0 opacity-10">
+          <div className="absolute inset-0 bg-repeat" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\' fill-rule=\'evenodd\'%3E%3Ccircle cx=\'3\' cy=\'3\' r=\'3\'/%3E%3Ccircle cx=\'13\' cy=\'13\' r=\'3\'/%3E%3C/g%3E%3C/svg%3E")' }}></div>
+        </div>
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1">
-              <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">Fred Walyaula</h1>
-              <h2 className="text-2xl md:text-3xl font-heading font-light mb-8">Community Development Specialist</h2>
-              <p className="text-lg mb-8">
+            <div className="order-2 md:order-1 animate-fadeIn">
+              <span className="inline-block px-4 py-1 rounded-full bg-white/20 backdrop-blur-sm text-white text-sm font-medium mb-6">
+                Community Development Expert
+              </span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight">
+                Fred Walyaula
+              </h1>
+              <h2 className="text-2xl md:text-3xl font-heading font-light mb-6 text-amber-100">
+                Transforming Communities Through Sustainable Development
+              </h2>
+              <p className="text-lg mb-8 text-white/90 max-w-xl">
                 A seasoned professional with over 10 years of experience in agro-ecological approaches, community mobilization, and sustainable development initiatives across Uganda.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
                   href="#contact"
-                  className="bg-accent hover:bg-amber-600 text-white font-medium py-2 px-6 rounded-md transition"
+                  className="bg-accent hover:bg-amber-600 text-white font-medium py-3 px-8 rounded-md transition shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center"
                 >
-                  Get in Touch
+                  <FaEnvelope className="mr-2" /> Get in Touch
                 </a>
                 <a
                   href="#about"
-                  className="bg-white hover:bg-gray-100 text-primary-600 font-medium py-2 px-6 rounded-md transition"
+                  className="bg-white hover:bg-gray-100 text-primary-700 font-medium py-3 px-8 rounded-md transition shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   Learn More
                 </a>
               </div>
             </div>
             <div className="order-1 md:order-2 flex justify-center">
-              <img
-                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Fred Walyaula"
-                className="rounded-full h-64 w-64 object-cover border-4 border-white shadow-lg"
-              />
+              <div className="relative">
+                <div className="absolute -inset-1 rounded-full bg-white/20 backdrop-blur-sm animate-pulse"></div>
+                <img
+                  src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                  alt="Fred Walyaula"
+                  className="rounded-full h-64 w-64 sm:h-72 sm:w-72 md:h-80 md:w-80 object-cover border-4 border-white shadow-2xl relative z-10"
+                />
+                {/* Decorative Elements */}
+                <div className="absolute -top-6 -right-6 h-16 w-16 rounded-full bg-accent border-4 border-white flex items-center justify-center shadow-lg">
+                  <FaBriefcase className="text-2xl text-white" />
+                </div>
+                <div className="absolute -bottom-4 -left-4 h-12 w-12 rounded-full bg-primary-800 border-4 border-white flex items-center justify-center shadow-lg">
+                  <FaGraduationCap className="text-xl text-white" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 md:py-24 bg-white">
+      <section id="about" className="py-16 md:py-24 bg-white overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-800 mb-4">About Me</h2>
             <div className="w-24 h-1 bg-primary mx-auto"></div>
           </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                alt="Community Development Work"
-                className="rounded-lg shadow-lg w-full h-auto"
-              />
+            <div className="relative">
+              <div className="absolute -left-4 -top-4 w-32 h-32 bg-primary-100 rounded-full opacity-50"></div>
+              <div className="absolute -right-4 -bottom-4 w-32 h-32 bg-amber-100 rounded-full opacity-50"></div>
+              <div className="relative overflow-hidden rounded-xl shadow-2xl transform transition hover:scale-105 duration-300">
+                <img
+                  src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                  alt="Community Development Work"
+                  className="w-full h-auto"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                  <div className="text-white p-6">
+                    <span className="text-xs uppercase tracking-wider bg-primary/80 px-3 py-1 rounded-full">
+                      Community Development 
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <h3 className="text-2xl font-heading font-semibold text-gray-800 mb-4">Professional Profile</h3>
-              <p className="text-gray-700 mb-6">
-                A seasoned Community Development Specialist, an Agro-Ecological Champion, Orphans and vulnerable persons advocate, an Environmental Social and Governance implementer with more than 10 years of experience working with several Local Governments, multinational and indigenous Organizations.
-              </p>
-              <p className="text-gray-700 mb-6">
-                I am passionate about One Health strategies to achieve Community-led development interventions through community collective actions and agro-ecological and social economic platforms, community SACCOS and women and youth empowerment.
-              </p>
+            
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-heading font-semibold text-gray-800 mb-4 flex items-center">
+                  <span className="inline-block mr-3 p-2 rounded-full bg-primary-50 text-primary">
+                    <FaUserTie className="w-5 h-5" />
+                  </span>
+                  Professional Profile
+                </h3>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  A seasoned Community Development Specialist, an Agro-Ecological Champion, Orphans and vulnerable persons advocate, an Environmental Social and Governance implementer with more than 10 years of experience working with several Local Governments, multinational and indigenous Organizations.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  I am passionate about One Health strategies to achieve Community-led development interventions through community collective actions and agro-ecological and social economic platforms, community SACCOS and women and youth empowerment.
+                </p>
+              </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                <div className="bg-gray-50 p-4 rounded-lg">
-                  <h4 className="font-heading font-semibold text-gray-800 mb-2">Languages</h4>
-                  <ul className="text-gray-700">
-                    <li>English (Official)</li>
-                    <li>Lumasaba & Luganda (Local)</li>
-                    <li>Lugwere & Kiswahili (Others)</li>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
+                <div className="bg-gray-50 p-5 rounded-xl shadow-sm border border-gray-100 hover:border-primary/20 hover:shadow transition duration-300">
+                  <h4 className="font-heading font-semibold text-gray-800 mb-3 flex items-center text-lg">
+                    <span className="text-primary mr-2">🌍</span> Languages
+                  </h4>
+                  <ul className="text-gray-700 space-y-1">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                      English (Official)
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                      Lumasaba & Luganda (Local)
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                      Lugwere & Kiswahili (Others)
+                    </li>
                   </ul>
                 </div>
-                <div className="bg-gray-50 p-4 rounded-lg">
-                  <h4 className="font-heading font-semibold text-gray-800 mb-2">Computer Skills</h4>
-                  <ul className="text-gray-700">
-                    <li>Microsoft Office Suite</li>
-                    <li>PowerPoint</li>
-                    <li>Excel</li>
-                    <li>Internet-related programs</li>
+                
+                <div className="bg-gray-50 p-5 rounded-xl shadow-sm border border-gray-100 hover:border-primary/20 hover:shadow transition duration-300">
+                  <h4 className="font-heading font-semibold text-gray-800 mb-3 flex items-center text-lg">
+                    <span className="text-primary mr-2">💻</span> Computer Skills
+                  </h4>
+                  <ul className="text-gray-700 space-y-1">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                      Microsoft Office Suite
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                      PowerPoint
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                      Excel
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                      Internet-related programs
+                    </li>
                   </ul>
                 </div>
               </div>
 
               <a
                 href="#"
-                className="inline-flex items-center bg-primary hover:bg-primary-600 text-white font-medium py-2 px-6 rounded-md transition"
+                className="inline-flex items-center bg-primary hover:bg-primary-600 text-white font-medium py-3 px-8 rounded-md transition shadow-md hover:shadow-lg transform hover:-translate-y-1"
               >
                 <span className="mr-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
