@@ -315,6 +315,122 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            
+            {showMoreExperience && (
+              <>
+                {/* Experience Item 4 */}
+                <div className="timeline-item mb-16">
+                  <div className="timeline-point"></div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="md:text-right md:pr-12 md:order-1 md:hidden">
+                      <h3 className="text-xl font-heading font-semibold text-gray-800 mb-2">
+                        Program Manager
+                      </h3>
+                      <h4 className="text-lg font-heading text-primary mb-4">Africa Development Promise (ADP - Uganda)</h4>
+                      <p className="text-gray-600 italic mb-2">February 2020 to February 2021</p>
+                      <div className="hidden md:block">
+                        <span className="inline-block bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded-full mr-2 mb-2">
+                          Cooperative Development
+                        </span>
+                        <span className="inline-block bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded-full mr-2 mb-2">
+                          Solar Energy
+                        </span>
+                        <span className="inline-block bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded-full mr-2 mb-2">
+                          Women Empowerment
+                        </span>
+                      </div>
+                    </div>
+                    <div className="bg-white rounded-lg shadow-md p-6 md:order-1">
+                      <p className="text-gray-700 mb-4">
+                        Managed agricultural cooperatives and smart village women and youth-led solar power project.
+                      </p>
+                      <ul className="text-gray-700 list-disc pl-5 space-y-2">
+                        <li>Built capacity of 165 leaders from 25 Cooperatives engaged in different value chains</li>
+                        <li>Linked 9 women's mushroom growing groups to partners for production support and value addition</li>
+                        <li>Identified and assessed 24 mushrooms out-growers to increase production</li>
+                        <li>Facilitated registration with PELUM Uganda and onboarded Master Card Foundation for financial literacy training</li>
+                      </ul>
+                      <div className="md:hidden mt-4">
+                        <span className="inline-block bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded-full mr-2 mb-2">
+                          Cooperative Development
+                        </span>
+                        <span className="inline-block bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded-full mr-2 mb-2">
+                          Solar Energy
+                        </span>
+                        <span className="inline-block bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded-full mr-2 mb-2">
+                          Women Empowerment
+                        </span>
+                      </div>
+                    </div>
+                    <div className="md:text-left md:pl-12 md:order-2 hidden md:block">
+                      <h3 className="text-xl font-heading font-semibold text-gray-800 mb-2">
+                        Program Manager
+                      </h3>
+                      <h4 className="text-lg font-heading text-primary mb-4">Africa Development Promise (ADP - Uganda)</h4>
+                      <p className="text-gray-600 italic mb-2">February 2020 to February 2021</p>
+                      <div>
+                        <span className="inline-block bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded-full mr-2 mb-2">
+                          Cooperative Development
+                        </span>
+                        <span className="inline-block bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded-full mr-2 mb-2">
+                          Solar Energy
+                        </span>
+                        <span className="inline-block bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded-full mr-2 mb-2">
+                          Women Empowerment
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Experience Item 5 */}
+                <div className="timeline-item mb-16">
+                  <div className="timeline-point"></div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="md:text-right md:pr-12 md:order-1">
+                      <h3 className="text-xl font-heading font-semibold text-gray-800 mb-2">
+                        Markets and Trade Manager
+                      </h3>
+                      <h4 className="text-lg font-heading text-primary mb-4">Farm Concern International</h4>
+                      <p className="text-gray-600 italic mb-2">March 2016 to December 2019</p>
+                      <div className="hidden md:block">
+                        <span className="inline-block bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded-full mr-2 mb-2">
+                          Market Research
+                        </span>
+                        <span className="inline-block bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded-full mr-2 mb-2">
+                          Value Chain Analysis
+                        </span>
+                        <span className="inline-block bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded-full mr-2 mb-2">
+                          Grantee Management
+                        </span>
+                      </div>
+                    </div>
+                    <div className="bg-white rounded-lg shadow-md p-6 md:order-2">
+                      <p className="text-gray-700 mb-4">
+                        Responsible for developing work plans, budgets, and reports for the central, Busoga, Teso, and Karamoja sub-regions.
+                      </p>
+                      <ul className="text-gray-700 list-disc pl-5 space-y-2">
+                        <li>Supervised 9 Grantee Organizations ensuring timely submissions and funds disbursement</li>
+                        <li>Oversaw 46 Commercial Village Trade Facilitators and 8 Markets Trade Facilitators</li>
+                        <li>Conducted market research and value chain analyses for 15 partner organizations</li>
+                        <li>Facilitated 115 Value Chain Business Forums and built capacity of 118 farmer groups and 39 cooperatives</li>
+                      </ul>
+                      <div className="md:hidden mt-4">
+                        <span className="inline-block bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded-full mr-2 mb-2">
+                          Market Research
+                        </span>
+                        <span className="inline-block bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded-full mr-2 mb-2">
+                          Value Chain Analysis
+                        </span>
+                        <span className="inline-block bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded-full mr-2 mb-2">
+                          Grantee Management
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
 
             {/* Show More Button */}
             <div className="text-center mt-8">
@@ -683,6 +799,152 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Expertise Section */}
+      <section id="expertise" className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-800 mb-4">Areas of Expertise</h2>
+            <div className="w-24 h-1 bg-primary mx-auto"></div>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Expertise Card 1 */}
+            <div className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow">
+              <div className="text-primary text-3xl mb-4">
+                <FaUsers />
+              </div>
+              <h3 className="text-xl font-heading font-semibold text-gray-800 mb-3">Community Mobilization</h3>
+              <p className="text-gray-700">
+                Expert in organizing, engaging, and empowering communities through participatory methods for sustainable development initiatives.
+              </p>
+            </div>
+            
+            {/* Expertise Card 2 */}
+            <div className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow">
+              <div className="text-primary text-3xl mb-4">
+                <FaSeedling />
+              </div>
+              <h3 className="text-xl font-heading font-semibold text-gray-800 mb-3">Agro-Ecological Approaches</h3>
+              <p className="text-gray-700">
+                Implementation of sustainable farming practices that enhance ecosystem services while improving agricultural productivity.
+              </p>
+            </div>
+            
+            {/* Expertise Card 3 */}
+            <div className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow">
+              <div className="text-primary text-3xl mb-4">
+                <FaChartLine />
+              </div>
+              <h3 className="text-xl font-heading font-semibold text-gray-800 mb-3">Value Chain Analysis</h3>
+              <p className="text-gray-700">
+                Comprehensive assessment of agricultural value chains to identify bottlenecks and opportunities for increased efficiency and profitability.
+              </p>
+            </div>
+            
+            {/* Expertise Card 4 */}
+            <div className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow">
+              <div className="text-primary text-3xl mb-4">
+                <FaHandshake />
+              </div>
+              <h3 className="text-xl font-heading font-semibold text-gray-800 mb-3">Stakeholder Engagement</h3>
+              <p className="text-gray-700">
+                Building strategic partnerships and coalitions among diverse stakeholders to create synergies for community-led development.
+              </p>
+            </div>
+            
+            {/* Expertise Card 5 */}
+            <div className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow">
+              <div className="text-primary text-3xl mb-4">
+                <FaFileAlt />
+              </div>
+              <h3 className="text-xl font-heading font-semibold text-gray-800 mb-3">Project Design & Management</h3>
+              <p className="text-gray-700">
+                Designing, implementing, and evaluating development projects with a focus on sustainability, inclusion, and measurable impact.
+              </p>
+            </div>
+            
+            {/* Expertise Card 6 */}
+            <div className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow">
+              <div className="text-primary text-3xl mb-4">
+                <FaUserTie />
+              </div>
+              <h3 className="text-xl font-heading font-semibold text-gray-800 mb-3">Capacity Building</h3>
+              <p className="text-gray-700">
+                Training and mentoring stakeholders in various aspects of community development, leadership, and sustainable business practices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Education Section */}
+      <section id="education" className="py-16 md:py-24 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-800 mb-4">Education & Certification</h2>
+            <div className="w-24 h-1 bg-primary mx-auto"></div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* Formal Education Column */}
+            <div>
+              <h3 className="text-2xl font-heading font-semibold text-gray-800 mb-6 flex items-center">
+                <FaGraduationCap className="mr-3 text-primary" /> Formal Education
+              </h3>
+              
+              {/* Education Item 1 */}
+              <div className="bg-white rounded-lg shadow-md p-6 mb-6">
+                <h4 className="text-xl font-heading font-semibold text-gray-800 mb-2">Master of Development Practice</h4>
+                <p className="text-lg text-primary mb-2">Regis University, Denver - Colorado, USA</p>
+                <p className="text-gray-600 mb-0">2020</p>
+              </div>
+              
+              {/* Education Item 2 */}
+              <div className="bg-white rounded-lg shadow-md p-6 mb-6">
+                <h4 className="text-xl font-heading font-semibold text-gray-800 mb-2">Bachelor's Degree in Social Work and Social Administration</h4>
+                <p className="text-lg text-primary mb-2">Uganda Christian University</p>
+                <p className="text-gray-600 mb-0">2006</p>
+              </div>
+              
+              {/* Education Item 3 */}
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h4 className="text-xl font-heading font-semibold text-gray-800 mb-2">Diploma in Community Development</h4>
+                <p className="text-lg text-primary mb-2">Nsamizi Training Institute for Social Development</p>
+                <p className="text-gray-600 mb-0">2001</p>
+              </div>
+            </div>
+            
+            {/* Professional Certifications Column */}
+            <div>
+              <h3 className="text-2xl font-heading font-semibold text-gray-800 mb-6 flex items-center">
+                <FaTools className="mr-3 text-primary" /> Professional Certifications
+              </h3>
+              
+              {/* Certification Item 1 */}
+              <div className="bg-white rounded-lg shadow-md p-6 mb-6">
+                <h4 className="text-xl font-heading font-semibold text-gray-800 mb-2">Bio-intensive Agriculture and Entrepreneurship</h4>
+                <p className="text-lg text-primary mb-2">Manor House Agricultural Training Center – Kitale, Kenya</p>
+                <p className="text-gray-600 mb-0">2014</p>
+              </div>
+              
+              {/* Certification Item 2 */}
+              <div className="bg-white rounded-lg shadow-md p-6 mb-6">
+                <h4 className="text-xl font-heading font-semibold text-gray-800 mb-2">Value Chain Analysis, Business Incubation and Market Research</h4>
+                <p className="text-lg text-primary mb-2">FCI Headquarters – Nairobi, Kenya</p>
+                <p className="text-gray-600 mb-0">2018</p>
+              </div>
+              
+              {/* Certification Item 3 */}
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h4 className="text-xl font-heading font-semibold text-gray-800 mb-2">Mindset Change for Sustainable Transformation</h4>
+                <p className="text-lg text-primary mb-2">C.I.M Center, Yatta, Machakos, Kenya</p>
+                <p className="text-gray-600 mb-0">2019</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       {/* Projects Section */}
       <section id="projects" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

@@ -38,8 +38,8 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link href="#home">
-              <a className="text-primary font-heading font-bold text-xl">Fred Walyaula</a>
+            <Link href="#home" className="text-primary font-heading font-bold text-xl">
+              Fred Walyaula
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-6">
