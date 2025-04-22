@@ -4,6 +4,65 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease forwards;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 1s ease forwards;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.animate-bounce-slow {
+  animation: bounce 3s ease-in-out infinite;
+}
+
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+/* Timeline Styling */
+
 :root {
   --background: 0 0% 100%;
   --foreground: 20 14.3% 4.1%;
@@ -74,12 +133,13 @@
 .timeline-container::after {
   content: '';
   position: absolute;
-  width: 2px;
+  width: 3px;
   background-color: #e5e7eb;
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -1px;
+  margin-left: -1.5px;
+  border-radius: 999px;
 }
 
 @media (max-width: 768px) {
@@ -102,6 +162,13 @@
   border-radius: 50%;
   z-index: 10;
   background: hsl(var(--primary));
+  box-shadow: 0 0 0 5px rgba(42, 160, 138, 0.2);
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-point {
+  transform: scale(1.2);
+  box-shadow: 0 0 0 8px rgba(42, 160, 138, 0.2);
 }
 
 @media (max-width: 768px) {

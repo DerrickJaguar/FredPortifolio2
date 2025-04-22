@@ -61,7 +61,7 @@ const Home = () => {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1 animate-fadeIn">
+            <div className="order-2 md:order-1 animate-slideInLeft">
               <span className="inline-block px-4 py-1 rounded-full bg-white/20 backdrop-blur-sm text-white text-sm font-medium mb-6">
                 Community Development Expert
               </span>
@@ -77,19 +77,19 @@ const Home = () => {
               <div className="flex flex-wrap gap-4">
                 <a
                   href="#contact"
-                  className="bg-accent hover:bg-amber-600 text-white font-medium py-3 px-8 rounded-md transition shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center"
+                  className="bg-accent hover:bg-amber-600 text-white font-medium py-3 px-8 rounded-md transition shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center animate-fadeIn delay-300"
                 >
                   <FaEnvelope className="mr-2" /> Get in Touch
                 </a>
                 <a
                   href="#about"
-                  className="bg-white hover:bg-gray-100 text-primary-700 font-medium py-3 px-8 rounded-md transition shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  className="bg-white hover:bg-gray-100 text-primary-700 font-medium py-3 px-8 rounded-md transition shadow-lg hover:shadow-xl transform hover:-translate-y-1 animate-fadeIn delay-500"
                 >
                   Learn More
                 </a>
               </div>
             </div>
-            <div className="order-1 md:order-2 flex justify-center">
+            <div className="order-1 md:order-2 flex justify-center animate-slideInRight">
               <div className="relative">
                 <div className="absolute -inset-1 rounded-full bg-white/20 backdrop-blur-sm animate-pulse"></div>
                 <img
@@ -98,10 +98,10 @@ const Home = () => {
                   className="rounded-full h-64 w-64 sm:h-72 sm:w-72 md:h-80 md:w-80 object-cover border-4 border-white shadow-2xl relative z-10"
                 />
                 {/* Decorative Elements */}
-                <div className="absolute -top-6 -right-6 h-16 w-16 rounded-full bg-accent border-4 border-white flex items-center justify-center shadow-lg">
+                <div className="absolute -top-6 -right-6 h-16 w-16 rounded-full bg-accent border-4 border-white flex items-center justify-center shadow-lg animate-bounce-slow">
                   <FaBriefcase className="text-2xl text-white" />
                 </div>
-                <div className="absolute -bottom-4 -left-4 h-12 w-12 rounded-full bg-primary-800 border-4 border-white flex items-center justify-center shadow-lg">
+                <div className="absolute -bottom-4 -left-4 h-12 w-12 rounded-full bg-primary-800 border-4 border-white flex items-center justify-center shadow-lg animate-bounce-slow delay-300">
                   <FaGraduationCap className="text-xl text-white" />
                 </div>
               </div>
@@ -119,9 +119,9 @@ const Home = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <div className="absolute -left-4 -top-4 w-32 h-32 bg-primary-100 rounded-full opacity-50"></div>
-              <div className="absolute -right-4 -bottom-4 w-32 h-32 bg-amber-100 rounded-full opacity-50"></div>
+            <div className="relative animate-slideInLeft">
+              <div className="absolute -left-4 -top-4 w-32 h-32 bg-primary-100 rounded-full opacity-50 animate-pulse"></div>
+              <div className="absolute -right-4 -bottom-4 w-32 h-32 bg-amber-100 rounded-full opacity-50 animate-pulse delay-300"></div>
               <div className="relative overflow-hidden rounded-xl shadow-2xl transform transition hover:scale-105 duration-300">
                 <img
                   src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
@@ -138,7 +138,7 @@ const Home = () => {
               </div>
             </div>
             
-            <div className="space-y-6">
+            <div className="space-y-6 animate-slideInRight">
               <div>
                 <h3 className="text-2xl font-heading font-semibold text-gray-800 mb-4 flex items-center">
                   <span className="inline-block mr-3 p-2 rounded-full bg-primary-50 text-primary">
@@ -155,7 +155,7 @@ const Home = () => {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
-                <div className="bg-gray-50 p-5 rounded-xl shadow-sm border border-gray-100 hover:border-primary/20 hover:shadow transition duration-300">
+                <div className="bg-gray-50 p-5 rounded-xl shadow-sm border border-gray-100 hover:border-primary/20 hover:shadow-md transition duration-300 transform hover:-translate-y-1 hover:scale-105">
                   <h4 className="font-heading font-semibold text-gray-800 mb-3 flex items-center text-lg">
                     <span className="text-primary mr-2">🌍</span> Languages
                   </h4>
@@ -175,7 +175,7 @@ const Home = () => {
                   </ul>
                 </div>
                 
-                <div className="bg-gray-50 p-5 rounded-xl shadow-sm border border-gray-100 hover:border-primary/20 hover:shadow transition duration-300">
+                <div className="bg-gray-50 p-5 rounded-xl shadow-sm border border-gray-100 hover:border-primary/20 hover:shadow-md transition duration-300 transform hover:-translate-y-1 hover:scale-105">
                   <h4 className="font-heading font-semibold text-gray-800 mb-3 flex items-center text-lg">
                     <span className="text-primary mr-2">💻</span> Computer Skills
                   </h4>
@@ -202,7 +202,7 @@ const Home = () => {
 
               <a
                 href="#"
-                className="inline-flex items-center bg-primary hover:bg-primary-600 text-white font-medium py-3 px-8 rounded-md transition shadow-md hover:shadow-lg transform hover:-translate-y-1"
+                className="inline-flex items-center bg-primary hover:bg-primary-600 text-white font-medium py-3 px-8 rounded-md transition shadow-md hover:shadow-lg transform hover:-translate-y-1 animate-fadeIn delay-400"
               >
                 <span className="mr-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -1218,21 +1218,37 @@ const Home = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 md:py-24 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="contact" className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute top-0 left-0 w-full h-64 bg-primary/5 -skew-y-6 transform origin-top-left"></div>
+        <div className="absolute right-1/4 bottom-1/3 w-64 h-64 bg-primary/5 rounded-full"></div>
+        <div className="absolute left-1/4 top-1/4 w-32 h-32 bg-amber-100/30 rounded-full"></div>
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
+            <span className="inline-block px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-3">
+              Let's Connect
+            </span>
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-800 mb-4">Get In Touch</h2>
             <div className="w-24 h-1 bg-primary mx-auto"></div>
+            <p className="mt-4 text-gray-600 max-w-xl mx-auto">
+              Have a question or want to discuss potential collaborations? Feel free to reach out through any of the channels below or send a direct message.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-2xl font-heading font-semibold text-gray-800 mb-6">Contact Information</h3>
+            <div className="bg-white rounded-xl shadow-lg p-8 transform transition hover:shadow-xl duration-300">
+              <h3 className="text-2xl font-heading font-semibold text-gray-800 mb-6 flex items-center">
+                <span className="inline-block mr-3 p-2 rounded-full bg-primary-50 text-primary">
+                  <FaEnvelope className="w-5 h-5" />
+                </span>
+                Contact Information
+              </h3>
 
-              <div className="space-y-6">
+              <div className="space-y-8">
                 <div className="flex items-start">
-                  <div className="bg-primary text-white p-3 rounded-md mr-4">
-                    <i className="fas fa-map-marker-alt"></i>
+                  <div className="bg-primary-50 text-primary p-3 rounded-lg mr-4 shadow-sm">
+                    <FaMapMarkerAlt className="w-5 h-5" />
                   </div>
                   <div>
                     <h4 className="text-lg font-heading font-semibold text-gray-800 mb-1">Address</h4>
@@ -1245,47 +1261,50 @@ const Home = () => {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="bg-primary text-white p-3 rounded-md mr-4">
-                    <i className="fas fa-envelope"></i>
+                  <div className="bg-primary-50 text-primary p-3 rounded-lg mr-4 shadow-sm">
+                    <FaEnvelope className="w-5 h-5" />
                   </div>
                   <div>
                     <h4 className="text-lg font-heading font-semibold text-gray-800 mb-1">Email</h4>
-                    <p className="text-gray-700">fredwalyaula@gmail.com</p>
+                    <a href="mailto:fredwalyaula@gmail.com" className="text-primary hover:text-primary-700 transition">fredwalyaula@gmail.com</a>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <div className="bg-primary text-white p-3 rounded-md mr-4">
-                    <i className="fas fa-phone"></i>
+                  <div className="bg-primary-50 text-primary p-3 rounded-lg mr-4 shadow-sm">
+                    <FaPhone className="w-5 h-5" />
                   </div>
                   <div>
                     <h4 className="text-lg font-heading font-semibold text-gray-800 mb-1">Phone</h4>
-                    <p className="text-gray-700">+256 772 883 867</p>
+                    <a href="tel:+256772883867" className="text-primary hover:text-primary-700 transition">+256 772 883 867</a>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <div className="bg-primary text-white p-3 rounded-md mr-4">
-                    <i className="fas fa-user-friends"></i>
+                  <div className="bg-primary-50 text-primary p-3 rounded-lg mr-4 shadow-sm">
+                    <FaUsers className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-heading font-semibold text-gray-800 mb-1">Professional Networks</h4>
-                    <div className="flex space-x-4 mt-2">
-                      <a
-                        href="#"
-                        className="bg-gray-200 hover:bg-primary hover:text-white text-gray-700 p-2 rounded-full transition-colors duration-300"
+                    <h4 className="text-lg font-heading font-semibold text-gray-800 mb-2">Social Profiles</h4>
+                    <div className="flex mt-1 space-x-4">
+                      <a 
+                        href="#" 
+                        className="bg-[#0077B5] text-white hover:bg-[#00669c] p-2 rounded-full transition shadow-sm hover:shadow"
+                        aria-label="LinkedIn"
                       >
                         <i className="fab fa-linkedin-in"></i>
                       </a>
-                      <a
-                        href="#"
-                        className="bg-gray-200 hover:bg-primary hover:text-white text-gray-700 p-2 rounded-full transition-colors duration-300"
+                      <a 
+                        href="#" 
+                        className="bg-[#1DA1F2] text-white hover:bg-[#0c85d0] p-2 rounded-full transition shadow-sm hover:shadow"
+                        aria-label="Twitter"
                       >
                         <i className="fab fa-twitter"></i>
                       </a>
-                      <a
-                        href="#"
-                        className="bg-gray-200 hover:bg-primary hover:text-white text-gray-700 p-2 rounded-full transition-colors duration-300"
+                      <a 
+                        href="#" 
+                        className="bg-[#4267B2] text-white hover:bg-[#365899] p-2 rounded-full transition shadow-sm hover:shadow"
+                        aria-label="Facebook"
                       >
                         <i className="fab fa-facebook-f"></i>
                       </a>
@@ -1295,77 +1314,98 @@ const Home = () => {
               </div>
             </div>
 
-            <div>
-              <h3 className="text-2xl font-heading font-semibold text-gray-800 mb-6">Send Me a Message</h3>
-
-              <form id="contact-form" className="space-y-6" onSubmit={handleSubmit}>
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
-                    required
-                  />
+            <div className="bg-white rounded-xl shadow-lg p-8 transform transition hover:shadow-xl duration-300">
+              <h3 className="text-2xl font-heading font-semibold text-gray-800 mb-6 flex items-center">
+                <span className="inline-block mr-3 p-2 rounded-full bg-primary-50 text-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                  </svg>
+                </span>
+                Send Me a Message
+              </h3>
+              
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
+                      Your Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition"
+                      placeholder="John Doe"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
+                      Your Email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition"
+                      placeholder="john@example.com"
+                      required
+                    />
+                  </div>
                 </div>
-
+                
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                    Your Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="subject" className="block text-gray-700 font-medium mb-2">
                     Subject
                   </label>
                   <input
                     type="text"
                     id="subject"
                     name="subject"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition"
+                    placeholder="How can I help you?"
                     required
                   />
                 </div>
-
+                
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
                     Message
                   </label>
                   <textarea
                     id="message"
                     name="message"
-                    rows={4}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                    rows={5}
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition resize-none"
+                    placeholder="Your message here..."
                     required
                   ></textarea>
                 </div>
-
+                
                 <button
                   type="submit"
-                  className="bg-primary hover:bg-primary-600 text-white font-medium py-2 px-6 rounded-md transition"
+                  className="w-full bg-primary hover:bg-primary-600 text-white font-medium py-3 px-8 rounded-lg transition shadow-md hover:shadow-lg flex items-center justify-center"
                   disabled={formStatus.isSubmitting}
                 >
                   {formStatus.isSubmitting ? (
                     <>
-                      <i className="fas fa-spinner fa-spin mr-2"></i> Sending...
+                      <svg className="animate-spin -ml-1 mr-2 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      </svg>
+                      Sending...
                     </>
                   ) : formStatus.isSubmitted ? (
                     <>
-                      <i className="fas fa-check mr-2"></i> Message Sent!
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Message Sent!
                     </>
                   ) : (
-                    "Send Message"
+                    <>
+                      <FaEnvelope className="mr-2" /> Send Message
+                    </>
                   )}
                 </button>
               </form>
