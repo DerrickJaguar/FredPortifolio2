@@ -122,31 +122,23 @@ const Home = () => {
             <div className="relative animate-slideInLeft">
               <div className="absolute -left-4 -top-4 w-32 h-32 bg-primary-100 rounded-full opacity-50 animate-pulse"></div>
               <div className="absolute -right-4 -bottom-4 w-32 h-32 bg-amber-100 rounded-full opacity-50 animate-pulse delay-300"></div>
-              <div className="relative overflow-hidden rounded-xl shadow-2xl transform transition hover:scale-105 duration-300">
-                <img
-                  src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                  alt="Fred Walyaula - Community Development Specialist"
-                  className="w-full h-auto"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
-                  <div className="text-white p-6">
-                    <span className="text-xs uppercase tracking-wider bg-primary/80 px-3 py-1 rounded-full">
-                      Community Development Expert
-                    </span>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Additional Image in a Frame */}
-              <div className="relative mt-6 transform transition hover:scale-105 duration-300">
-                <div className="absolute inset-0 border-2 border-primary/20 rounded-xl -m-3 -rotate-3"></div>
-                <div className="absolute inset-0 border-2 border-accent/20 rounded-xl -m-3 rotate-3"></div>
-                <div className="overflow-hidden rounded-xl shadow-lg">
+              {/* Single enhanced image with decorative frame */}
+              <div className="relative transform transition hover:scale-105 duration-300">
+                <div className="absolute inset-0 border-2 border-primary/30 rounded-xl -m-3 -rotate-2"></div>
+                <div className="absolute inset-0 border-2 border-accent/30 rounded-xl -m-3 rotate-2"></div>
+                <div className="relative overflow-hidden rounded-xl shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1508341591423-4347099e1f19?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                    alt="Fred Walyaula in the field"
+                    alt="Fred Walyaula - Community Development Specialist"
                     className="w-full h-auto transform transition hover:scale-110 duration-500"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                    <div className="text-white p-6">
+                      <span className="text-xs uppercase tracking-wider bg-primary/90 px-3 py-1 rounded-full shadow-lg">
+                        Community Development Expert
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
