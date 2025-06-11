@@ -124,8 +124,7 @@ const Home = () => {
               <div className="absolute -right-4 -bottom-4 w-32 h-32 bg-amber-100 rounded-full opacity-50 animate-pulse delay-300"></div>
               {/* Single enhanced image with decorative frame */}
               <div className="relative transform transition hover:scale-105 duration-300">
-                <div className="absolute inset-0 border-2 border-primary/30 rounded-xl -m-3 -rotate-2"></div>
-                <div className="absolute inset-0 border-2 border-accent/30 rounded-xl -m-3 rotate-2"></div>
+                
                 <div className="relative overflow-hidden rounded-xl shadow-2xl">
                   <img
                     src="/src/assets/profile.JPG"
@@ -206,8 +205,8 @@ const Home = () => {
               </div>
 
               <a
-                href="/assets/Fred_Walyaula_CV.pdf"
-                download="Fred_Walyaula_CV.pdf"
+                href="src/assets/Career Profile.pdf"
+                download="Career Profile.pdf"
                 className="inline-flex items-center bg-primary hover:bg-primary-600 text-white font-medium py-3 px-8 rounded-md transition shadow-md hover:shadow-lg transform hover:-translate-y-1 animate-fadeIn delay-400"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1129,7 +1128,7 @@ const Home = () => {
             {/* Project 4 */}
             <div className="bg-gray-50 rounded-lg shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1524085904803-5b6817469b9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                src="/src/assets/climate.jpeg"
                 alt="Green Challenge Fund"
                 className="w-full h-56 object-cover"
               />
