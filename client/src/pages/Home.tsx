@@ -128,7 +128,7 @@ const Home = () => {
                 <div className="absolute inset-0 border-2 border-accent/30 rounded-xl -m-3 rotate-2"></div>
                 <div className="relative overflow-hidden rounded-xl shadow-2xl">
                   <img
-                    src="https://images.unsplash.com/photo-1508341591423-4347099e1f19?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    src="/src/assets/profile.JPG"
                     alt="Fred Walyaula - Community Development Specialist"
                     className="w-full h-auto transform transition hover:scale-110 duration-500"
                   />
